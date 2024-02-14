@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.pop-main{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.game-buttons button:hover{
+    --tw-bg-opacity: 1;
+    background-color: rgb(34 211 238 / var(--tw-bg-opacity));
+}
+.game-buttons button[disabled]{
+    opacity: 0.4;
+}
+.pop-up{
+    opacity: 0;
+    transition: all 0.5s;
+    display: none;
+    z-index: 999;
+}
+.letter{
+    border-bottom: 3px solid black;
+}
+.show{
+    opacity: 1;
+    display: block;
+}
+.gussed{
+    border: none;
+    font-weight: 700;
+    font-size: 25px;
+}
+.game-buttons button{
+    text-transform: uppercase;
+    margin: 2px;
+    padding: 0.5rem;
+    cursor: pointer!important;
+    border-radius: 0.5rem;
+    width: 2.25rem;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgb(6 182 212 / var(--tw-bg-opacity));
+}
