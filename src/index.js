@@ -37,7 +37,7 @@ const getword=()=>{
 const gameover=(isVictory)=>{
     setTimeout(()=>{
         const modeltext=isVictory? `you found the word :`:`the correct word was :`;
-        popUp.querySelector(".pop-image img").src=isVictory?`/images/victory.gif`:`/images/lost.gif`;
+        popUp.querySelector(".pop-image img").src=isVictory?`../images/victory.gif`:`../images/lost.gif`;
         popUp.querySelector("h4").innerText=isVictory?`congrats!`:`game over!`;
         popUp.querySelector("p").innerHTML=`${modeltext} <b>${Curuntword}</b>`;
         popUp.classList.add("show")
