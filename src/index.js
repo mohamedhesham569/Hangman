@@ -19,7 +19,7 @@ const Reset =()=>{
     correctletters=[];
     gusses.innerHTML=Curuntword.split("").map(()=>`<li class="letter m-2 w-4"></li>`).join(" ");
     popUp.classList.remove("show");
-    Hangman.src=`/images/hangman-${Count}.svg`;
+    Hangman.src=`../images/hangman-${Count}.svg`;
     Incorrect.innerText=`${Count}/6`
     Keyboard.querySelectorAll("button").forEach(btn => btn.disabled=false)
 }
@@ -60,7 +60,7 @@ const initgame=(button,Clickedletter)=>{
     }
         else{
             Count++;
-            Hangman.src=`/images/hangman-${Count}.svg`
+            Hangman.src=`../images/hangman-${Count}.svg`
         }
         Incorrect.innerText=`${Count}/6`
 
